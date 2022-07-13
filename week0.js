@@ -8,7 +8,7 @@ Create an object 5 separate ways that has two properties and one method:
 
     1. Object literal
     2. Object.create 
-       - uses exisiting object literal as a prototype to create new objects
+       - uses existing object literal as a prototype to create new objects
        - allows a "base" object literal to be used to then add unique properties to it
     3. Factory function 
         - function that returns an object 
