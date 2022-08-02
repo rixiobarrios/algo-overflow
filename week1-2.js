@@ -101,84 +101,90 @@ https://leetcode.com/problems/valid-palindrome/
 // console.log(isPalindrome(' ')); //=> true
 
 /*
-
 Valid Anagram
 https://leetcode.com/problems/valid-anagram/
-
 */
 
-/*
+// var isAnagram = function (s, t) {
+//     if (s.length !== t.length) {
+//         return false;
+//     }
+//     if (s.split('').sort().join('') === t.split('').sort().join('')) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// };
 
+// console.log(isAnagram('anagram', 'nagaram')); // true
+// console.log(isAnagram('rat', 'car')); // false
+
+/*
 Roman to Integer
 https://leetcode.com/problems/roman-to-integer/
-
 */
 
-/*
-   
+// var romanToInt = function (s) {
+//     if (typeof s !== 'string') return NaN;
+//     const romanRegExp =
+//         /^(?=[MDCLXVI])(M*)(?:(C)(?:(D)|(M))|(D?)(C{0,3}))(?:(X)(?:(L)|(C))|(L?)(X{0,3}))(?:(I)(?:(V)|(X))|(V?)(I{0,3}))$/i;
+//     let parts = s.match(romanRegExp);
+//     if (!parts) return NaN;
+//     let result = 0;
+//     [
+//         0, 1000, -100, 500, 1000, 500, 100, -10, 50, 100, 50, 10, -1, 5, 10, 5,
+//         1,
+//     ].forEach((weight, i) => (result += weight * (parts[i] || '').length));
+//     return result;
+// };
+
+// console.log(romanToInt('III')); //3
+/*  
 Valid Parentheses
 https://leetcode.com/problems/valid-parentheses/
-
 */
 
 /*
-
 Find the Difference of Two Arrays
 https://leetcode.com/problems/find-the-difference-of-two-arrays/
-
 */
 
 /*
-
 Concatenation of Array
 https://leetcode.com/problems/concatenation-of-array/
 */
 
 /*
-
 Shuffle the Array
 https://leetcode.com/problems/shuffle-the-array/
-
 */
 
 /*
-
 Flipping an Image
 https://leetcode.com/problems/flipping-an-image/
-
 */
 
 /*
- 
 Maximum Subarray
 https://leetcode.com/problems/maximum-subarray/
-
 */
 
 /*
-
 Contains Duplicate
 https://leetcode.com/problems/contains-duplicate/
-
 */
 
 /*
-
 Best Time to Buy and Sell Stock
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
-
 */
 
 /*
-
 Climbing Stairs
 https://leetcode.com/problems/climbing-stairs/
-
 */
 
 /*
-
 Pascals Triangle
 https://leetcode.com/problems/pascals-triangle/
-
 */
