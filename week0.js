@@ -17,7 +17,7 @@ var user = {
 user.sayHello();
 
     2. Object.create 
-       - uses exisiting object literal as a prototype to create new objects
+       - uses existing object literal as a prototype to create new objects
        - allows a "base" object literal to be used to then add unique properties to it.
 
   const john = Object.create(user);

@@ -144,10 +144,44 @@ Valid Parentheses
 https://leetcode.com/problems/valid-parentheses/
 */
 
+// var isValid = function (s) {
+//     const arr = [];
+//     for (let char of s) {
+//         if (char === ')' && arr[arr.length - 1] === '(') {
+//             arr.pop();
+//         } else if (char === ']' && arr[arr.length - 1] === '[') {
+//             arr.pop();
+//         } else if (char === '}' && arr[arr.length - 1] === '{') {
+//             arr.pop();
+//         } else {
+//             arr.push(char);
+//         }
+//     }
+//     return arr.length === 0;
+// };
+
+// console.log(isValid('()')); // true
+// console.log(isValid('(){}[]')); // true
+// console.log(isValid('(]')); // false
+
 /*
 Find the Difference of Two Arrays
 https://leetcode.com/problems/find-the-difference-of-two-arrays/
 */
+
+// var findDifference = function (nums1, nums2) {
+//     let set1 = new Set(nums1),
+//         set2 = new Set(nums2);
+
+//     let a = [],
+//         b = [];
+//     for (let e of set1) if (!set2.has(e)) a.push(e);
+//     for (let e of set2) if (!set1.has(e)) b.push(e);
+
+//     return [a, b];
+// };
+
+// console.log(findDifference([1, 2, 3], [2, 4, 6])); // [[1,3],[4,6]]
 
 /*
 Concatenation of Array
